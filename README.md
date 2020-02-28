@@ -12,6 +12,7 @@ After it is installed you must have now *node_modules* folder. If that is done, 
 
 If you have any trouble you can check solution from [Bootstrap 4 Official page](https://getbootstrap.com/docs/4.0/getting-started/download/).
 
+I will update the manual.
 # Update
 You can normally update HTML and JS. If you wan't to edit CSS, you have to open *Terminal/Powershell*, open your website folder. Then you have to enter two commands:
 
