@@ -5,6 +5,7 @@
 
 // Added
 @import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/bootstrap/scss/alert";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/nav";
@@ -12,3 +13,30 @@
 
 
 //Custom CSS
+
+
+.pad-section{
+    padding: 0px 185px;
+}
+
+.h2-custom{
+    font-family: Cooper,Georgia,Times,Times New Roman,serif;
+    color: #241c15;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: -.03125rem;
+    line-height: 1;
+}
+.h6-custom{
+    color: #241c15;
+    font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 1.4;
+}
+.h3-custom{
+    color: #403b3b;
+    font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+    line-height: 1.35;
+}
