@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Overlock&display=swap');
 // Requiered
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
@@ -14,33 +16,128 @@
 
 //Custom CSS
 
+//Variables:
 
-.pad-section{
-    padding: 0px 185px;
+//Background
+$bg_first: #ffe01b;
+$bg_second: #FFF;
+
+//Buttons
+$btn_primary: #007c89;
+$btn_second: #FFF;
+
+//Paddings
+$p_primary: 10rem;
+$p_secondary: 1.5rem;
+$p_botTop: 3rem;
+
+//
+body{
+    font-family: Raleway,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+    margin: 0 !important;
 }
 
-.h2-custom{
-    font-family: Cooper,Georgia,Times,Times New Roman,serif;
+.pad-l{
+    padding-left: $p_primary;
+    padding-right: $p_secondary;
+}
+.pad-r{
+    padding-right: $p_primary;
+    padding-left: $p_secondary;
+
+}
+.pad-l,.pad-r{
+    padding-top: $p_botTop;
+    padding-bottom: $p_botTop;
+}
+
+.h2-custom,.h2-customl{
+    font-family: Overlock,Georgia,Times,Times New Roman,serif;
     color: #241c15;
-    font-size: 2.5rem;
-    font-weight: 300;
+    font-size: 4rem;
     letter-spacing: -.03125rem;
-    line-height: 1;
+    line-height: .9;
 }
-.h6-custom{
+
+.h6-custom, .h7-custom{
     color: #241c15;
-    font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
-    font-size: 1.25rem;
-    font-weight: 300;
+    font-size: 1.5rem;
     letter-spacing: 0;
+
     line-height: 1.4;
+}
+.h7-custom{
+    color: #403b3b;
+    font-size: 1.3rem;
+    line-height: 1.5;
 }
 .h3-custom{
     color: #403b3b;
-    font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
     line-height: 1.35;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
 }
 
-body{
-    margin: 0 !important;
+.btn{
+    border-radius: 0px;
+    min-width: 7.5rem;
+    padding: .8125rem;
+    font-weight: 600;
+    font-size: .9375rem;
+}
+.btn-blue{
+    background-color: $btn_primary;
+    box-shadow: inset 0 0 0 0.0625rem $btn_primary;
+    color: $btn_second;
+    padding: 1.25rem 2.5rem;
+
+}
+
+.btn-light{
+    width: fit-content;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 0.0625rem rgba(0,124,137,.3);
+    color: $btn_primary;
+    font-size: .9375rem;
+    padding: 1.25rem 2.5rem;
+}
+.btn-light:hover{
+    background: transparent;
+    border-color: #241c15;
+    color: $btn_primary;
+}
+
+.a-dec{
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    color: $btn_primary;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+//Navigation
+.nav{
+    padding: 0 6.25rem;
+    background-color: $bg_first;
+    transform-origin: 50% 0;
+}
+.nav:hover{
+    background-color: $bg_second;
+}
+.nav-link{
+    color: #241c15;
+    font-size: .9375rem;
+    font-weight: 400;
+    position: relative;
+}
+.nav-link:hover{
+    color: $btn_primary;
 }
