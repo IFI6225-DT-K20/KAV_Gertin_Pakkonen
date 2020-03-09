@@ -26,7 +26,7 @@ $bg_second: #FFF;
 $btn_primary: #007c89;
 $btn_second: #FFF;
 
-//Paddings
+//Paddings left and right
 $p_primary: 10rem;
 $p_secondary: 1.5rem;
 $p_botTop: 3rem;
@@ -44,6 +44,13 @@ body{
 .pad-r{
     padding-right: $p_primary;
     padding-left: $p_secondary;
+
+}
+.pad{
+    padding-right: $p_primary;
+    padding-left: $p_primary;
+    padding-top: $p_botTop;
+    padding-bottom: $p_botTop;
 
 }
 .pad-l,.pad-r{
@@ -108,7 +115,7 @@ body{
     color: $btn_primary;
 }
 
-.a-dec{
+.a-dec,.footer-dec{
     -webkit-appearance: none;
     background: none;
     border: none;
@@ -140,4 +147,34 @@ a, a:hover {
 }
 .nav-link:hover{
     color: $btn_primary;
+}
+
+//Footer
+.footer-list-item, .footer-list-header{
+    padding-top: 0rem;
+    padding-bottom: .5rem;
+    line-height: 1;
+    color: #403b3b;
+    padding-left: 1.4rem;
+    text-decoration: none;
+    font-size: .8rem;
+}
+.footer-list-header{
+    font-size: 1rem;
+    padding-bottom: .1rem !important;
+}
+.footer-list-item:hover{
+    color: #007c89;
+}
+.footer-txt{
+    font-size: .7rem;
+    text-align: center;
+}
+.footer-dec{
+    font-size: .9rem;
+}
+.footer-info{
+    font-size: 1rem;
+    color: #403b3b;
+
 }
