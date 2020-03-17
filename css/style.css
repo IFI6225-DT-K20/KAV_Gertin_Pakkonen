@@ -5865,11 +5865,15 @@ a, a:hover {
   padding-left: 6.25rem;
   padding-right: 6.25rem;
   background-color: #ffe01b;
+  transition: background-color 200ms linear;
+  border-bottom: 1px solid transparent;
   transform-origin: 50% 0;
 }
 
 .nav:hover {
   background-color: #FFF;
+  transition: background-color 200ms linear;
+  border-bottom: 1px solid #f6f6f4;
 }
 
 .nav-link {
@@ -5881,6 +5885,48 @@ a, a:hover {
 
 .nav-link:hover {
   color: #007c89;
+}
+
+.nav.scrolled {
+  background-color: transparent !important;
+  transition: background-color 200ms linear;
+  border-bottom: 1px solid transparent;
+}
+.nav.scrolled .scroll {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 200ms linear, opacity 200ms linear;
+}
+
+.nav.scrolled:hover {
+  background-color: #FFF !important;
+  border-bottom: 1px solid #f6f6f4;
+}
+.nav.scrolled:hover .scroll {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 200ms linear, opacity 200ms linear;
+}
+
+.brandLogo__freddie-eye--winking {
+  opacity: 0;
+}
+
+.brandLogo__freddie-eye {
+  opacity: 1;
+}
+
+.brandLogo:hover .brandLogo__freddie {
+  animation-duration: 0.5s;
+  animation-name: moveHead;
+}
+.brandLogo:hover .brandLogo__freddie-eye--winking {
+  animation-duration: 0.5s;
+  animation-name: blinkEye;
+}
+.brandLogo:hover .brandLogo__freddie-eye {
+  animation-duration: 0.5s;
+  animation-name: blinkEyeReverse;
 }
 
 .footer-list-item, .footer-list-header {
@@ -5914,6 +5960,41 @@ a, a:hover {
 .footer-info {
   font-size: 1rem;
   color: #403b3b;
+}
+
+/*Animations*/
+@keyframes moveHead {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes blinkEye {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes blinkEyeReverse {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
