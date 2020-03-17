@@ -11,6 +11,7 @@
 @import "../node_modules/bootstrap/scss/alert";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/transitions";
 
 
 
@@ -37,6 +38,20 @@ body{
     margin: 0 !important;
 }
 
+.bg-yellow, .bg-white{
+    padding-right: $p_primary;
+    padding-left: $p_primary;
+    padding-top: $p_botTop;
+    padding-bottom: $p_botTop;
+
+}
+.bg-yellow{
+    background-color: $bg_first;
+}
+.bg-white{
+    background-color: $bg_second;
+}
+
 .pad-l{
     padding-left: $p_primary;
     padding-right: $p_secondary;
@@ -46,13 +61,7 @@ body{
     padding-left: $p_secondary;
 
 }
-.pad{
-    padding-right: $p_primary;
-    padding-left: $p_primary;
-    padding-top: $p_botTop;
-    padding-bottom: $p_botTop;
 
-}
 .pad-l,.pad-r{
     padding-top: $p_botTop;
     padding-bottom: $p_botTop;
@@ -97,7 +106,7 @@ body{
     background-color: $btn_primary;
     box-shadow: inset 0 0 0 0.0625rem $btn_primary;
     color: $btn_second;
-    padding: 1.25rem 2.5rem;
+    padding: 1.25rem 2.3rem;
 
 }
 
@@ -132,7 +141,8 @@ a, a:hover {
 
 //Navigation
 .nav{
-    padding: 0 6.25rem;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
     background-color: $bg_first;
     transform-origin: 50% 0;
 }
@@ -148,7 +158,10 @@ a, a:hover {
 .nav-link:hover{
     color: $btn_primary;
 }
-
+//Sections
+.sponsor-pictures{
+    width: 9rem;
+}
 //Footer
 .footer-list-item, .footer-list-header{
     padding-top: 0rem;

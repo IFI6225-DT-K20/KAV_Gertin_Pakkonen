@@ -5672,9 +5672,52 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
 }
 
+.fade {
+  transition: opacity 0.15s linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+    transition: none;
+  }
+}
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+
 body {
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
   margin: 0 !important;
+}
+
+.bg-yellow, .bg-white {
+  padding-right: 10rem;
+  padding-left: 10rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.bg-yellow {
+  background-color: #ffe01b;
+}
+
+.bg-white {
+  background-color: #FFF;
 }
 
 .pad-l {
@@ -5685,13 +5728,6 @@ body {
 .pad-r {
   padding-right: 10rem;
   padding-left: 1.5rem;
-}
-
-.pad {
-  padding-right: 10rem;
-  padding-left: 10rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .pad-l, .pad-r {
@@ -5740,7 +5776,7 @@ body {
   background-color: #007c89;
   box-shadow: inset 0 0 0 0.0625rem #007c89;
   color: #FFF;
-  padding: 1.25rem 2.5rem;
+  padding: 1.25rem 2.3rem;
 }
 
 .btn-light {
@@ -5774,7 +5810,8 @@ a, a:hover {
 }
 
 .nav {
-  padding: 0 6.25rem;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
   background-color: #ffe01b;
   transform-origin: 50% 0;
 }
@@ -5792,6 +5829,10 @@ a, a:hover {
 
 .nav-link:hover {
   color: #007c89;
+}
+
+.sponsor-pictures {
+  width: 9rem;
 }
 
 .footer-list-item, .footer-list-header {
