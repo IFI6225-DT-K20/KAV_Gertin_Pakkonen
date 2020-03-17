@@ -12,6 +12,7 @@
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/images";
 
 
 
@@ -22,6 +23,7 @@
 //Background
 $bg_first: #ffe01b;
 $bg_second: #FFF;
+$bg_pink: #f9e0fa;
 
 //Buttons
 $btn_primary: #007c89;
@@ -38,7 +40,7 @@ body{
     margin: 0 !important;
 }
 
-.bg-yellow, .bg-white{
+.bg-yellow, .bg-white, .bg-pink{
     padding-right: $p_primary;
     padding-left: $p_primary;
     padding-top: $p_botTop;
@@ -47,6 +49,9 @@ body{
 }
 .bg-yellow{
     background-color: $bg_first;
+}
+.bg-pink{
+    background-color: $bg_pink;
 }
 .bg-white{
     background-color: $bg_second;
@@ -159,9 +164,7 @@ a, a:hover {
     color: $btn_primary;
 }
 //Sections
-.sponsor-pictures{
-    width: 9rem;
-}
+
 //Footer
 .footer-list-item, .footer-list-header{
     padding-top: 0rem;
@@ -189,5 +192,4 @@ a, a:hover {
 .footer-info{
     font-size: 1rem;
     color: #403b3b;
-
 }
