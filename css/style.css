@@ -5733,11 +5733,15 @@ body {
   margin: 0 !important;
 }
 
-.bg-yellow, .bg-white, .bg-pink {
+.bg-yellow, .bg-white, .bg-pink, .bg-gray {
   padding-right: 10rem;
   padding-left: 10rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.bg-gray {
+  background-color: #f6f6f4;
 }
 
 .bg-yellow {
@@ -5794,6 +5798,22 @@ body {
   font-size: 2rem;
   text-align: center;
   font-weight: 400;
+}
+
+.collapse-h1 {
+  color: #241c15;
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+}
+
+.collapse-p {
+  color: #403b3b;
+  font-size: 1.5rem;
+  font-family: Overlock, Georgia, Times, Times New Roman, serif;
+  line-height: 1.75;
 }
 
 .btn {
