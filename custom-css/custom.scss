@@ -13,6 +13,7 @@
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/transitions";
 @import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/input-group";
 
 
 
@@ -157,7 +158,9 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
-
+.gray-dec{
+    color: rgba(36,28,21,0.65);
+}
 a, a:hover {
     text-decoration: none;
 }
