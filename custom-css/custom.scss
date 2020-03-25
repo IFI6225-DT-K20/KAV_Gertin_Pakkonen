@@ -31,9 +31,9 @@ $btn_primary: #007c89;
 $btn_second: #FFF;
 
 //Paddings left and right
-$p_primary: 10rem;
+$p_primary: 11rem;
 $p_secondary: 1.5rem;
-$p_botTop: 3rem;
+$p_botTop: 4rem;
 
 //
 body{
@@ -164,8 +164,9 @@ a, a:hover {
 
 //Navigation
 .nav{
-    padding-left: 6.25rem;
-    padding-right: 6.25rem;
+    padding-top: 2rem;
+    padding-left: 5.25rem;
+    padding-right: 5.25rem;
     background-color: $bg_first;
     transition: background-color 200ms linear;
     border-bottom: 1px solid transparent;
@@ -207,24 +208,29 @@ a, a:hover {
         transition: visibility 200ms linear, opacity 200ms linear;
     }
 }
-.brandLogo__freddie-eye--winking{
-    opacity: 0;
+.svg-logo{
+    &__head{
+        &__blink{
+            opacity: 0;
+        }
+        &__eye{
+            opacity: 1;
+        }
+    }
 }
-.brandLogo__freddie-eye{
-    opacity: 1;
-}
-.brandLogo:hover{
-    .brandLogo__freddie{
+.svg-logo:hover{
+    .svg-logo__head{
         animation-duration: .5s;
         animation-name: moveHead;
-    }
-    .brandLogo__freddie-eye--winking{
-        animation-duration: .5s;
-        animation-name: blinkEye;
-    }
-    .brandLogo__freddie-eye{
-        animation-duration: .5s;
-        animation-name: blinkEyeReverse;
+
+        &__blink{
+            animation-duration: .5s;
+            animation-name: blinkEye;
+        }
+        &__eye{
+            animation-duration: .5s;
+            animation-name: blinkEyeReverse;
+        }
     }
 }
 //Sections

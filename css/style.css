@@ -5734,10 +5734,10 @@ body {
 }
 
 .bg-yellow, .bg-white, .bg-pink, .bg-gray {
-  padding-right: 10rem;
-  padding-left: 10rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-right: 11rem;
+  padding-left: 11rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .bg-gray {
@@ -5757,18 +5757,18 @@ body {
 }
 
 .pad-l {
-  padding-left: 10rem;
+  padding-left: 11rem;
   padding-right: 1.5rem;
 }
 
 .pad-r {
-  padding-right: 10rem;
+  padding-right: 11rem;
   padding-left: 1.5rem;
 }
 
 .pad-l, .pad-r {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .h2-custom, .h2-customl {
@@ -5862,8 +5862,9 @@ a, a:hover {
 }
 
 .nav {
-  padding-left: 6.25rem;
-  padding-right: 6.25rem;
+  padding-top: 2rem;
+  padding-left: 5.25rem;
+  padding-right: 5.25rem;
   background-color: #ffe01b;
   transition: background-color 200ms linear;
   border-bottom: 1px solid transparent;
@@ -5908,23 +5909,22 @@ a, a:hover {
   transition: visibility 200ms linear, opacity 200ms linear;
 }
 
-.brandLogo__freddie-eye--winking {
+.svg-logo__head__blink {
   opacity: 0;
 }
-
-.brandLogo__freddie-eye {
+.svg-logo__head__eye {
   opacity: 1;
 }
 
-.brandLogo:hover .brandLogo__freddie {
+.svg-logo:hover .svg-logo__head {
   animation-duration: 0.5s;
   animation-name: moveHead;
 }
-.brandLogo:hover .brandLogo__freddie-eye--winking {
+.svg-logo:hover .svg-logo__head__blink {
   animation-duration: 0.5s;
   animation-name: blinkEye;
 }
-.brandLogo:hover .brandLogo__freddie-eye {
+.svg-logo:hover .svg-logo__head__eye {
   animation-duration: 0.5s;
   animation-name: blinkEyeReverse;
 }
