@@ -6037,8 +6037,27 @@ a, a:hover {
   text-decoration: none;
 }
 
+input {
+  outline-color: #007c89;
+}
+
+.signup-list li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  border-radius: 8px;
+  background: #007c89;
+}
+
+.signup-list li {
+  list-style: none;
+  font-size: smaller;
+}
+
 .nav {
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-left: 5.25rem;
   padding-right: 5.25rem;
   background-color: #ffe01b;
