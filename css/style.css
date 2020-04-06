@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Overlock&display=swap");
 .btn {
   display: inline-block;
@@ -5906,10 +5906,18 @@ body {
 }
 
 .bg-yellow, .bg-white, .bg-pink, .bg-gray {
-  padding-right: 11rem;
-  padding-left: 11rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-right: 5.5rem;
+  padding-left: 5.5rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+@media (min-width: 992px) {
+  .bg-yellow, .bg-white, .bg-pink, .bg-gray {
+    padding-right: 11rem;
+    padding-left: 11rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
 }
 
 .bg-gray {
@@ -5939,8 +5947,8 @@ body {
 }
 
 .pad-l, .pad-r {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
 }
 
 .h2-custom, .h2-customl {
@@ -5951,17 +5959,26 @@ body {
   line-height: 0.9;
 }
 
-.h6-custom, .h7-custom {
+.h6-custom, .h7-custom, .h8-custom {
   color: #241c15;
   font-size: 1.5rem;
   letter-spacing: 0;
   line-height: 1.4;
 }
 
+#hoverItem1:hover, #hoverItem2:hover, #hoverItem3:hover {
+  transition: opacity 300ms ease-in-out;
+}
+
 .h7-custom {
   color: #403b3b;
   font-size: 1.3rem;
   line-height: 1.5;
+}
+
+.h8-custom {
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .h3-custom {
@@ -6023,6 +6040,7 @@ body {
   background: none;
   border: none;
   color: #007c89;
+  font-weight: 500;
   cursor: pointer;
   font-size: 1.2rem;
   padding-left: 0;
@@ -6057,7 +6075,7 @@ input {
 }
 
 .nav {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-left: 5.25rem;
   padding-right: 5.25rem;
   background-color: #ffe01b;
@@ -6155,6 +6173,15 @@ input {
 .footer-info {
   font-size: 1rem;
   color: #403b3b;
+}
+
+.w-33 {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .w-33 {
+    width: 33.3%;
+  }
 }
 
 /*Animations*/
