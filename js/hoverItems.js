@@ -19,4 +19,10 @@ $(document).ready(function() {
       .mouseleave(function() {
         $('#hoverItem2,#hoverItem1').css('opacity', '1');
     });
+    $('.marketing-sector-open').mouseenter(function() {
+        $('.marketing-sector').css('display', 'fixed');
+      })
+      .mouseleave(function() {
+        $('.marketing-sector').css('display', 'none');
+    });
 });

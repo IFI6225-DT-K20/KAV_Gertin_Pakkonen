@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 
   </head>
-  <body>
-    
+  <body>  
   <div class="nav sticky-top d-sm-flex flex-row align-items-center"> <!-- nav -->
     <div class="p-2 navitem d-flex flex-row">
       <a class="nav-link active" style="background-color: transparent;"href="#"><svg xmlns="http://www.w3.org/2000/svg" class="svg-logo" aria-label="Mailchimp" width="188" height="60" viewBox="0 0 188 60">
@@ -37,7 +36,72 @@
     </a>
     </div>
     <div class="p-2 navitem scroll"><a class="nav-link" href="#">Why Mailchimp?</a></div>
-    <div class="p-2 navitem scroll"><a class="nav-link" href="#">Marketing Platform</a></div>
+    <div class="navitem dropdown scroll"> 
+      <a class="nav-link dropdown-toggle" 
+         href="#" id="navbarDropdown" 
+         role="button" data-toggle="dropdown"
+         aria-haspopup="true" 
+         aria-expanded="false"> 
+         Marketing Platform
+      </a> 
+      
+      <div class="dropdown-menu pl-2 scroll"
+           aria-labelledby="navbarDropdown"> 
+        <div class="d-flex flex-row justify-content-around pl-5 pr-5">
+          <div class="d-flex flex-column w-20">
+            <a class="nav-link dropdown-item-image-text d-flex flex-column" href="#">
+              <img class="img-fluid" src="https://eep.io/images/yzco4xsimv0y/4avRba05kb9SgSkG8HEVfk/23306132d432030228c0b491fca1c278/ILLO_NavIcon_Overview_800x800__1_.png?w=60&q=95" alt="Illustration of stars and planets." width="60">
+              <span class="dropdown-item-a" href="#">Overview</span>
+            </a>
+            <span class="pl-2 pr-2">All the tools you need to market smarter and grow faster.</span>
+          </div>
+          <div class="d-flex flex-column">
+            <a class="nav-link dropdown-item-image-text d-flex flex-column" href="#">
+              <img class="img-fluid" src="https://eep.io/images/yzco4xsimv0y/1oD4nQBTGDeziOzHoBci8R/1bbdbcfef4dbb66b1838d8d0d7ea321a/ILLO_NavIcon_Audience_800x800__1_.png?w=60&q=95" alt="Illustration of stars and planets." width="60">
+              <span class="dropdown-item-a">Audients</span>
+            </a>
+            <a class="nav-link dropdown-item-a" href="#">Marketing CRM</a>
+            <a class="nav-link dropdown-item-a" href="#">Audience Dashboard</a>
+            <a class="nav-link dropdown-item-a" href="#">Tags</a>
+            <a class="nav-link dropdown-item-a" href="#">Segmentation</a>
+            <a class="nav-link dropdown-item-a" href="#">Behavioral Targeting</a>
+            <a class="nav-link dropdown-item-a" href="#">Lookalike Audiences</a>
+          </div>
+          <div class="d-flex flex-column">
+            <a class="nav-link dropdown-item-image-text d-flex flex-column" href="#">
+              <img class="img-fluid" src="https://eep.io/images/yzco4xsimv0y/2MoVdgX5dY0w2Q4uoEyY6m/665eb21bae3cea19b81c882538b1a2e5/ILLO_Nav-Icon_Create_130.png?w=60&q=95" alt="Illustration of stars and planets." width="60">
+              <span class="dropdown-item-a" href="#">Brand</span>
+            </a>
+            <a class="nav-link dropdown-item-a" href="#">Content Studio</a>
+            <a class="nav-link dropdown-item-a" href="#">Templates</a>
+            <a class="nav-link dropdown-item-a" href="#">Domains</a>
+            <a class="nav-link dropdown-item-a" href="#">Websites Beta</a>
+          </div>
+          <div class="d-flex flex-column">
+            <a class="nav-link dropdown-item-image-text d-flex flex-column" href="#">
+              <img class="img-fluid pl-2" src="https://eep.io/images/yzco4xsimv0y/7LI3GuaHosUtWmdXvXCteU/022b3f96948ed2a899cd39426561e5a6/ILLO_NavIcon_Campaigns_800x800.png?w=60&q=95" alt="Illustration of stars and planets." width="60">
+              <span class="dropdown-item-a" href="#">Campaigns</span>
+            </a>
+            <a class="nav-link dropdown-item-a" href="#">Email</a>
+            <a class="nav-link dropdown-item-a" href="#">Social Media</a>
+            <a class="nav-link dropdown-item-a" href="#">Landing Pages</a>
+            <a class="nav-link dropdown-item-a" href="#">Shoppable Landing Pages</a>
+            <a class="nav-link dropdown-item-a" href="#">Digital Ads</a>
+            <a class="nav-link dropdown-item-a" href="#">Postcards</a>
+            <a class="nav-link dropdown-item-a" href="#">Automations</a>
+          </div>
+          <div class="d-flex flex-column">
+            <a class="nav-link dropdown-item-image-text d-flex flex-column" href="#">
+            <img class="img-fluid pl-2" src="https://eep.io/images/yzco4xsimv0y/6JAitUdBUQkMOKU4aIYYCc/6818a3595ab12ce907655ae148cab6af/ILLO_Nav-Icon_Resources_130-1.png?w=60&q=95" alt="Illustration of stars and planets." width="60">
+            <span class="dropdown-item-a" href="#">Insights</span>
+            </a>
+            <a class="nav-link dropdown-item-a" href="#">Reports & Analytics</a>
+            <a class="nav-link dropdown-item-a" href="#">Smart Recommendations</a>
+            <a class="nav-link dropdown-item-a" href="#">Integrations</a>
+          </div>
+        </div>
+      </div> 
+    </div>
     <div class="p-2 navitem scroll"><a class="nav-link" href="#">Pricing</a></div>
     <div class="p-2 navitem mr-auto scroll"><a class="nav-link" href="#">Resources</a></div>
     <div class="p-2 mr-2 scroll">
@@ -48,7 +112,6 @@
     <button type="button" class="mr-2 btn btn-outline-dark p-3 scroll" onclick="location.href='./login/index.html'">Log In</button>
     <button type="button" class="btn btn-outline-info btn-blue p-3 mr-4 scroll" onclick="location.href='./signup/index.html'">Sign Up Free</button>
   </div>
-
   <div class="d-lg-flex flex-row justify-content-around align-items-center bg-yellow"> <!-- first section -->
     <div class="d-flex flex-column flex-wrap">
       <span class="pb-3 pt-3 h2-custom">Ready, set, grow</span>

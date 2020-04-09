@@ -14,7 +14,7 @@
 @import "../node_modules/bootstrap/scss/transitions";
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/input-group";
-
+@import "../node_modules/bootstrap/scss/dropdown";
 
 
 //Custom CSS
@@ -81,7 +81,11 @@ body{
     padding-top: $p_botTop;
     padding-bottom: $p_botTop;
 }
-
+.marketing-sector{
+    display: none;
+    z-index: 999;
+    top: 30%;
+}
 .h2-custom,.h2-customl{
     font-family: Overlock,Georgia,Times,Times New Roman,serif;
     color: #241c15;
@@ -206,7 +210,7 @@ input {
     
 }
 .nav:hover{
-    background-color: $bg_second;
+    background-color: $bg_second !important;
     transition: background-color 200ms linear;
     border-bottom: 1px solid $bg_gray;
 }
@@ -219,6 +223,28 @@ input {
 .nav-link:hover{
     color: $btn_primary;
 }
+.dropdown-item-a{
+    color: $btn_primary;
+}
+.dropdown-item-a:hover{
+    color: #241c15;
+}
+.dropdown-item-image-text:hover{
+    cursor: pointer;
+    span{
+        color: #241c15;
+
+    }
+}
+.dropdown { 
+    position: static !important; 
+} 
+  
+.dropdown-menu { 
+    margin-top: 1rem !important;
+    border: 0px solid transparent !important;
+    width: 100% !important; 
+} 
 .nav.scrolled {
     background-color: transparent !important;
     transition: background-color 200ms linear;
@@ -299,6 +325,12 @@ input {
     width: 100%;
     @include media-breakpoint-up(lg) {
         width: 33.3%;
+    }
+}
+.w-20{
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+        width: 20%;
     }
 }
 
