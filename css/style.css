@@ -6138,14 +6138,20 @@ body {
   margin: 0 !important;
 }
 
-.bg-yellow, .bg-white, .bg-pink, .bg-gray {
+.bg-yellow,
+.bg-white,
+.bg-pink,
+.bg-gray {
   padding-right: 5.5rem;
   padding-left: 5.5rem;
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
 }
 @media (min-width: 992px) {
-  .bg-yellow, .bg-white, .bg-pink, .bg-gray {
+  .bg-yellow,
+.bg-white,
+.bg-pink,
+.bg-gray {
     padding-right: 11rem;
     padding-left: 11rem;
     padding-top: 7.5rem;
@@ -6179,7 +6185,8 @@ body {
   padding-left: 1.5rem;
 }
 
-.pad-l, .pad-r {
+.pad-l,
+.pad-r {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
 }
@@ -6190,7 +6197,8 @@ body {
   top: 30%;
 }
 
-.h2-custom, .h2-customl {
+.h2-custom,
+.h2-customl {
   font-family: Overlock, Georgia, Times, Times New Roman, serif;
   color: #241c15;
   font-size: 4rem;
@@ -6198,14 +6206,18 @@ body {
   line-height: 0.9;
 }
 
-.h6-custom, .h7-custom, .h8-custom {
+.h6-custom,
+.h7-custom,
+.h8-custom {
   color: #241c15;
   font-size: 1.5rem;
   letter-spacing: 0;
   line-height: 1.4;
 }
 
-#hoverItem1:hover, #hoverItem2:hover, #hoverItem3:hover {
+#hoverItem1:hover,
+#hoverItem2:hover,
+#hoverItem3:hover {
   transition: opacity 300ms ease-in-out;
 }
 
@@ -6274,7 +6286,8 @@ body {
   color: #007c89;
 }
 
-.a-dec, .footer-dec {
+.a-dec,
+.footer-dec {
   -webkit-appearance: none;
   background: none;
   border: none;
@@ -6290,7 +6303,8 @@ body {
   color: rgba(36, 28, 21, 0.65);
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
 }
 
@@ -6406,7 +6420,8 @@ input {
   animation-name: blinkEyeReverse;
 }
 
-.footer-list-item, .footer-list-header {
+.footer-list-item,
+.footer-list-header {
   padding-top: 0rem;
   padding-bottom: 0.5rem;
   line-height: 1;

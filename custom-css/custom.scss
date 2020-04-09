@@ -37,16 +37,20 @@ $p_secondary: 1.5rem;
 $p_botTop: 7.5rem;
 
 //
-body{
-    font-family: Raleway,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+body {
+    font-family: Raleway, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
     margin: 0 !important;
 }
 
-.bg-yellow, .bg-white, .bg-pink, .bg-gray{
+.bg-yellow,
+.bg-white,
+.bg-pink,
+.bg-gray {
     padding-right: $p_primary/2;
     padding-left: $p_primary/2;
     padding-top: $p_botTop/2;
     padding-bottom: $p_botTop/2;
+
     @include media-breakpoint-up(lg) {
         padding-right: $p_primary;
         padding-left: $p_primary;
@@ -54,94 +58,114 @@ body{
         padding-bottom: $p_botTop;
     }
 }
-.bg-gray{
+
+.bg-gray {
     background-color: $bg_gray;
 }
-.bg-yellow{
+
+.bg-yellow {
     background-color: $bg_first;
 }
-.bg-pink{
+
+.bg-pink {
     background-color: $bg_pink;
 }
-.bg-white{
+
+.bg-white {
     background-color: $bg_second;
 }
 
-.pad-l{
+.pad-l {
     padding-left: $p_primary;
     padding-right: $p_secondary;
 }
-.pad-r{
+
+.pad-r {
     padding-right: $p_primary;
     padding-left: $p_secondary;
 
 }
 
-.pad-l,.pad-r{
+.pad-l,
+.pad-r {
     padding-top: $p_botTop;
     padding-bottom: $p_botTop;
 }
-.marketing-sector{
+
+.marketing-sector {
     display: none;
     z-index: 999;
     top: 30%;
 }
-.h2-custom,.h2-customl{
-    font-family: Overlock,Georgia,Times,Times New Roman,serif;
+
+.h2-custom,
+.h2-customl {
+    font-family: Overlock, Georgia, Times, Times New Roman, serif;
     color: #241c15;
     font-size: 4rem;
     letter-spacing: -.03125rem;
     line-height: .9;
 }
 
-.h6-custom, .h7-custom, .h8-custom{
+.h6-custom,
+.h7-custom,
+.h8-custom {
     color: #241c15;
     font-size: 1.5rem;
     letter-spacing: 0;
     line-height: 1.4;
 }
-#hoverItem1:hover, #hoverItem2:hover, #hoverItem3:hover{
+
+#hoverItem1:hover,
+#hoverItem2:hover,
+#hoverItem3:hover {
     transition: opacity 300ms ease-in-out;
 }
-.h7-custom{
+
+.h7-custom {
     color: #403b3b;
     font-size: 1.3rem;
     line-height: 1.5;
 }
-.h8-custom{
+
+.h8-custom {
     font-size: 1rem;
     line-height: 1;
 }
-.h3-custom{
+
+.h3-custom {
     color: #403b3b;
     line-height: 1.35;
     font-size: 2rem;
     text-align: center;
     font-weight: 400;
 }
-.collapse-h1{
+
+.collapse-h1 {
     color: #241c15;
-    font-size: 2rem; 
+    font-size: 2rem;
     border: none;
     background-color: transparent;
     outline: none;
-    font-family: Raleway,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+    font-family: Raleway, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
 }
-.collapse-p{
+
+.collapse-p {
     color: #403b3b;
-    font-size: 1.5rem; 
-    font-family: Overlock,Georgia,Times,Times New Roman,serif;
+    font-size: 1.5rem;
+    font-family: Overlock, Georgia, Times, Times New Roman, serif;
     line-height: 1.75;
 }
 
-.btn{
+.btn {
     border-radius: 0px;
     min-width: 7.5rem;
     padding: .8125rem;
     font-weight: 600;
     font-size: .9375rem;
 }
-.btn-blue{
+
+.btn-blue {
     background-color: $btn_primary;
     box-shadow: inset 0 0 0 0.0625rem $btn_primary;
     color: $btn_second;
@@ -149,21 +173,23 @@ body{
 
 }
 
-.btn-light{
+.btn-light {
     width: fit-content;
     background-color: transparent;
-    box-shadow: inset 0 0 0 0.0625rem rgba(0,124,137,.3);
+    box-shadow: inset 0 0 0 0.0625rem rgba(0, 124, 137, .3);
     color: $btn_primary;
     font-size: .9375rem;
     padding: 1.25rem 2.5rem;
 }
-.btn-light:hover{
+
+.btn-light:hover {
     background: transparent;
     border-color: #241c15;
     color: $btn_primary;
 }
 
-.a-dec,.footer-dec{
+.a-dec,
+.footer-dec {
     -webkit-appearance: none;
     background: none;
     border: none;
@@ -174,17 +200,21 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
-.gray-dec{
-    color: rgba(36,28,21,0.65);
+
+.gray-dec {
+    color: rgba(36, 28, 21, 0.65);
 }
-a, a:hover {
+
+a,
+a:hover {
     text-decoration: none;
 }
+
 input {
     outline-color: $btn_primary;
 }
 
-.signup-list li::before{
+.signup-list li::before {
     content: "";
     display: inline-block;
     width: 8px;
@@ -194,12 +224,14 @@ input {
     background: #007c89;
 
 }
-.signup-list li{
+
+.signup-list li {
     list-style: none;
     font-size: smaller;
 }
+
 //Navigation
-.nav{
+.nav {
     padding-top: 1.5rem;
     padding-left: 5.25rem;
     padding-right: 5.25rem;
@@ -207,94 +239,110 @@ input {
     transition: background-color 200ms linear;
     border-bottom: 1px solid transparent;
     transform-origin: 50% 0;
-    
+
 }
-.nav:hover{
+
+.nav:hover {
     background-color: $bg_second !important;
     transition: background-color 200ms linear;
     border-bottom: 1px solid $bg_gray;
 }
-.nav-link{
+
+.nav-link {
     color: #241c15;
     font-size: .9375rem;
     font-weight: 400;
     position: relative;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: $btn_primary;
 }
-.dropdown-item-a{
+
+.dropdown-item-a {
     color: $btn_primary;
 }
-.dropdown-item-a:hover{
+
+.dropdown-item-a:hover {
     color: #241c15;
 }
-.dropdown-item-image-text:hover{
+
+.dropdown-item-image-text:hover {
     cursor: pointer;
-    span{
+
+    span {
         color: #241c15;
 
     }
 }
-.dropdown { 
-    position: static !important; 
-} 
-  
-.dropdown-menu { 
+
+.dropdown {
+    position: static !important;
+}
+
+.dropdown-menu {
     margin-top: 1rem !important;
     border: 0px solid transparent !important;
-    width: 100% !important; 
-} 
+    width: 100% !important;
+}
+
 .nav.scrolled {
     background-color: transparent !important;
     transition: background-color 200ms linear;
     border-bottom: 1px solid transparent;
 
-    .scroll{
+    .scroll {
         visibility: hidden;
         opacity: 0;
         transition: visibility 200ms linear, opacity 200ms linear;
     }
 }
-.nav.scrolled:hover{
+
+.nav.scrolled:hover {
     background-color: $bg_second !important;
     border-bottom: 1px solid $bg_gray;
 
-    .scroll{
+    .scroll {
         visibility: visible;
         opacity: 1;
         transition: visibility 200ms linear, opacity 200ms linear;
     }
 }
-.svg-logo{
-    &__head{
-        &__blink{
+
+.svg-logo {
+    &__head {
+        &__blink {
             opacity: 0;
         }
-        &__eye{
+
+        &__eye {
             opacity: 1;
         }
     }
 }
-.svg-logo:hover{
-    .svg-logo__head{
+
+.svg-logo:hover {
+    .svg-logo__head {
         animation-duration: .5s;
         animation-name: moveHead;
 
-        &__blink{
+        &__blink {
             animation-duration: .5s;
             animation-name: blinkEye;
         }
-        &__eye{
+
+        &__eye {
             animation-duration: .5s;
             animation-name: blinkEyeReverse;
         }
     }
 }
+
 //Sections
 
 //Footer
-.footer-list-item, .footer-list-header{
+.footer-list-item,
+.footer-list-header {
     padding-top: 0rem;
     padding-bottom: .5rem;
     line-height: 1;
@@ -303,32 +351,41 @@ input {
     text-decoration: none;
     font-size: .8rem;
 }
-.footer-list-header{
+
+.footer-list-header {
     font-size: 1rem;
     padding-bottom: .1rem !important;
 }
-.footer-list-item:hover{
+
+.footer-list-item:hover {
     color: #007c89;
 }
-.footer-txt{
+
+.footer-txt {
     font-size: .7rem;
     text-align: center;
 }
-.footer-dec{
+
+.footer-dec {
     font-size: .9rem;
 }
-.footer-info{
+
+.footer-info {
     font-size: 1rem;
     color: #403b3b;
 }
-.w-33{
+
+.w-33 {
     width: 100%;
+
     @include media-breakpoint-up(lg) {
         width: 33.3%;
     }
 }
-.w-20{
+
+.w-20 {
     width: 100%;
+
     @include media-breakpoint-up(lg) {
         width: 20%;
     }
@@ -337,17 +394,43 @@ input {
 
 /*Animations*/
 @keyframes moveHead {
-    from {transform: rotate(0deg);}
-    50%{transform: rotate(-5deg);}
-    to {transform: rotate(0deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
 }
+
 @keyframes blinkEye {
-    from {opacity: 0;}
-    50%{opacity: 1;}
-    to {opacity: 0;}
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
+
 @keyframes blinkEyeReverse {
-    from {opacity: 1;}
-    50%{opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

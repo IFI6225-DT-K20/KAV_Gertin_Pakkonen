@@ -1,0 +1,24 @@
+{
+  "name": "kav_gertin_pakkonen",
+  "version": "1.0.0",
+  "description": "Mailchimp website",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.26.3",
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IFI6225-DT-K20/KAV_Gertin_Pakkonen.git"
+  },
+  "author": "Gertin Pakkonen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IFI6225-DT-K20/KAV_Gertin_Pakkonen/issues"
+  },
+  "homepage": "https://github.com/IFI6225-DT-K20/KAV_Gertin_Pakkonen#readme"
+}
